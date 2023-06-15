@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Chat Application</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="header">
+                <h3>Chat Application <span id="numberOfUsers"></span></h3>
+            </div>
+
+            <div id="messages">
+            </div>
+
+            <div id="feedback"></div>
+        </div>
+
+        <div id="form">
+            <input type="text" id="form-message-username" placeholder="Enter the username...">
+            <input type="text" id="form-message-text" placeholder="Enter the message...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #a876aa;
+    --background-color: #eeeeee;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    height: 800px;
+    width: 600px;
+    max-height: 90%;
+}
+
+.container p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    color: var(--accent-color);
+}
+
+.header .avatar {
+    background-color: var(--accent-color);
+    align-self: center;
+    padding: 5px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.header h3 {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.header i {
+    margin: 0 10px;
+}
+
+.chat {
+    background-color: #fff;
+    height: 100%;
+    overflow: auto;
+    padding: 10px;
+}
+
+#messages{
+    padding: 0 10px;
+    max-height:60vh;
+    overflow: auto;
+    width: 100%;
+}
+
+#messages .message{
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#messages .message:nth-child(odd){
+    background: #eee;
+}
+
+#messages .message span.username{
+    font-weight: 600;
+}
+
+#messages .message span.text{
+    color: gray;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#feedback{
+    display: inline-block;
+    background: #eee;
+    font-weight: 500;
+    color: gray;
+    border-radius: 3px;
+}
+
+#form{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+#form input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eee;
+    outline: none;
+    margin-top: 5px;
+}
+
+#form input:first-child{
+    margin-top: 0;
+}
+
+#form button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 25%;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    background: var(--accent-color);
+}
+
+#form button:active{
+    background: #835a85;
+}
+
+/*=============== SCROLLBAR ===============*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #eee;
+    border-radius: 5px;
+}
+
+/*=============== MEDIA QUERY ===============*/
+
+@media screen and (max-width: 650px) {
+    .container {
+        max-height: 100%;
+        height: 100%;
+        width: 100%;
+    }
+}
+
